@@ -1,5 +1,7 @@
 # table-cell
 
+## resouces:
++ https://mly-zju.github.io/html/css/2016/02/23/verticalAlign.html
 
 ## 知识点：
 1. 当父级为d:table的时候，子级(为d:tbc)会width/height:100%;
