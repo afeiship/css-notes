@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .parent{
+            width:100%;
+            height:100%;
+            background-color: #000;
+            margin:0 auto;
+        }
+        .parent>.center{
+            width:100%;
+            height:100%;
+        }
+        .center {
+            object-fit: contain;
+            /*其属性值，分别是填充（默认）、包含、覆盖（可能被裁剪）、无变化（保持原状）和等比例缩放*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        I am the object-fit
+    </div>
+    <div class="parent">
+        <img class="center" src="http://image.zhangxinxu.com/image/study/s/s256/mm1.jpg" alt="">
+    </img>
+
+</body>
+
+</html>
