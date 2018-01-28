@@ -3,6 +3,7 @@
 
 ## resources:
 + http://www.zhangxinxu.com/wordpress/2016/04/css-writing-mode/
++ http://www.zhangxinxu.com/study/201604/writing-mode-text-vertical-layout.html
 
 ## 知识点：
 + 针对 inline/inline-block 元素，
