@@ -1,6 +1,8 @@
 # double-div-center
 > double div center.
 
+## resources:
++ http://www.mamicode.com/info-detail-2154406.html
 
 ## 知识点：
 + margin/padding 等，设置为百分比，都是以父级宽度的50%为基准的
