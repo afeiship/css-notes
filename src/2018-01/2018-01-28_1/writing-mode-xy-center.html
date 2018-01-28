@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>writing-mode</title>
+    <style>
+        .box {
+            width: 400px; height: 300px;
+            background-color: #f0f3f9;
+            overflow: hidden;
+            text-align: center;
+        }
+        .inner{
+            display: inline-block;
+            width:100%;
+            text-align: center;
+        }
+        
+        .img{
+        }
+        
+        .verticle-mode {
+            /*
+            writing-mode: tb-rl; 
+            -webkit-writing-mode: vertical-rl;      
+            */
+            writing-mode: vertical-lr;
+        }
+
+        .horizontal-mode{
+            writing-mode: horizontal-tb;
+        }
+    </style>
+</head>
+<body>
+    <div class="box verticle-mode">
+        <div class="horizontal-mode inner">
+            <img src="http://image.zhangxinxu.com/image/study/s/s256/mm1.jpg" />
+        </div>
+    </div>
+</body>
+</html>
