@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table cell center.</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .table1{
+            display: table;
+            height:100%;
+            width:100%;
+            border: 2px solid #00f;
+        }
+
+        .table-cell {
+            display: table-cell;
+            border:1px solid #f00;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .inner-box{
+            background: #f60;
+            padding:10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table1">
+        <div class="table-cell">
+            <div class="inner-box">
+                    Just a table cell.
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
