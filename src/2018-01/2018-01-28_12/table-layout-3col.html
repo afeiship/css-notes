@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .actual-table {
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .actual-table td {
+            width: 10%;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .actual-table td:nth-child(even) {
+            background: #ccc;
+        }
+
+        .actual-table td:nth-child(odd) {
+            background: #eee;
+        }
+
+
+
+        /* 
+        Simulate with div:
+        */
+
+        .div-table {
+            display: table;
+            table-layout: fixed;
+        }
+
+        .div-tbcell {
+            width: 1%;
+            padding: 10px;
+            display: table-cell;
+        }
+
+
+        .div-table .div-tbcell:nth-child(even) {
+            background: #ccc;
+        }
+
+        .div-table .div-tbcell:nth-child(odd) {
+            background: #eee;
+        }
+
+
+
+        #wrapper {
+            display: table;
+            table-layout: fixed;
+            
+            width:90%;
+            height:100px;
+            background-color:Gray;
+        }
+        #wrapper div {
+            display: table-cell;
+            height:100px;
+        }
+        
+        #one {
+            background-color:#f60
+        }
+        #two {
+            background-color:blue
+        }
+        #three {
+            background-color:red
+        }
+    </style>
+</head>
+
+<body>
+    <table class="actual-table">
+        <tr>
+            <td>e  你一定也有过这种感觉的。当你心事重重，渴望找一个人聊一聊的时候，那个可以聊的人来了，可是你们却并没有聊什么。当然，聊是聊了，可是他聊他的，你也试着开始聊你的，只是到后来，你放弃了……那么，最后的办法就是静下来，啃啮自己的寂寞。或者反过来说，让寂寞来吞噬你。</td>
+            <td>
+                    定也有过这种感
+                </td>
+            <td>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="div-table">
+        <div class="div-tbcell">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </div>
+        <div class="div-tbcell">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+            vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+            mi vitae est. Mauris placerat eleifend leo.
+        </div>
+        <div class="div-tbcell">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </div>
+    </div>
+
+    <div id="wrapper">
+            <div id="one">one one one one one one one one one one one one one one one one one one one one one</div>
+            <div id="two">two two two two two two</div>
+            <div id="three">three</div>
+        </div>
+
+    
+</body>
+
+</html>
