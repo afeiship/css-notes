@@ -1,7 +1,10 @@
 # abs-x
 > absolute x center.
 
-# 知识点：
+## ressources:
++ https://s.codepen.io/shshaw/fullpage/gEiDt#Height
+
+## 知识点：
 ```css
 .wh-box {
     background: #f60;

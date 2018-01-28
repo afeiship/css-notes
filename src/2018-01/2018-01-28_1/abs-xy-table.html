@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .abs-xy-center-table{
+            /*
+            这里有个很重要的知识点：
+            如果display 用block之后，这个时候就必须规定height
+            但如果用table就不用了
+            */
+            display: table;
+
+            
+            position: absolute;
+            margin:auto;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            width:90%;
+            text-align: center;
+            background: #F60;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="abs-xy-center-table">
+            <p>Some Text</p>
+            <p>Some Text</p>
+            <p>Some Text</p>
+            <p>Some Text</p>
+        </div>  
+
+</body>
+</html>
