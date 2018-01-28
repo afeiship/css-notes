@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            height:100%;
+        }
+
+        .dib-block,
+        .dib-fix{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .dib-block{
+            background: #eee;
+            border:1px solid #f00;
+        }
+        .dib-fix{
+            width:0;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="dib-block">
+        my test!
+    </div>
+    <s class="dib-fix"></s>
+</body>
+</html>
