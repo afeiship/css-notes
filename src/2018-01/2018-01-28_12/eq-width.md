@@ -1,5 +1,8 @@
 # eq-width:
 
+## muliple colums layout:
++ http://matthewjamestaylor.com/blog/ultimate-multi-column-liquid-layouts-em-and-pixel-widths
+
 
 ## 知识点：
 1. 这里的基本原理是外层table/里层table-cell
@@ -26,6 +29,7 @@
 
 ## Style1:
 ```scss
+/* 1%: 实测试，没有用：table-layout: fixed;  */
 .div-table{
     display:table;
     table-layout: fixed;
@@ -44,5 +48,20 @@
         display:table-cell;
         width:33%;
     }
+}
+```
+
+## styl3:
+```css
+/*
+https://www.w3schools.com/howto/howto_css_equal_height.asp
+*/
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
 }
 ```
