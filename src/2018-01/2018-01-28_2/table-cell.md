@@ -20,3 +20,63 @@ html, body{ width:100%; height:100%; margin:0}
 body{ display:table;}
 div{ display:table-cell; vertical-align:middle; text-align:center}
 ```
+
+## 关于table-cell 1%的总结：
+
+1. 第一种方案：
+```conf
+原理解释：
+
+table-layout:fixed;
+这个性能会好一些，是在没有填充内容的时候，把cell的宽度计算好
+所以，他的必要条件是table的width是已经有了的；width:100%;
+```
+
+
+```html
+<div class="table">
+    <div class="cell">a</div>
+    <div class="cell">aaaaaaaaaaaaaaa</div>
+</div>
+```
+
+```css
+.table{
+    width:100%;
+    display:table;
+    table-layout:fixed;
+}
+.table .cell{
+    display:table-cell;
+    width:1%;
+}
+```
+
+
+2. 第2种方案：
+```conf
+原理解释：
+
+table-layout:auto;
+这个是根据内容自动计算，所以cell的宽度是要接近份数的一个比例
+table:width:100%
+这个就是非必要条件了
+```
+
+
+```html
+<div class="table">
+    <div class="cell">a</div>
+    <div class="cell">aaaaaaaaaaaaaaa</div>
+</div>
+```
+
+```css
+.table{
+    display:table;
+}
+.table .cell{
+    display:table-cell;
+    width:48%;
+}
+```
