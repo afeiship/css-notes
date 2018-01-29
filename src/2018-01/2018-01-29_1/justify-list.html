@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .justify-list {
+            width: 50%;
+            margin: 0 auto;
+            background: #f0f3f9;
+            text-align: justify;
+        }
+
+        /*
+        .justify-list::after{
+            content:'';
+            display: inline-block;
+            width: 100%;
+            border: 1px solid #000;
+        }
+        */
+
+        .justify-list .item {
+            /* width: 130px; */
+            margin-bottom: 50px;;
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .justify-list .item img {
+            display: block;
+        }
+
+
+        .justify-list .item.fix {
+            font-size: 0;
+            height: 0;
+            padding: 0;
+            line-height: 0;
+            margin: 0;
+            width: 100%;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="justify-list">
+        <div class="item">
+            <img src="http://image.zhangxinxu.com/image/study/s/s128/mm9.jpg" alt="">
+            <br> test
+        </div>
+
+        <div class="item">
+            <img src="http://image.zhangxinxu.com/image/study/s/s128/mm9.jpg" alt="">
+            <br> test
+        </div>
+
+        <div class="item">
+            <img src="http://image.zhangxinxu.com/image/study/s/s128/mm9.jpg" alt="">
+            <br> test
+        </div>
+
+        <div class="item">
+            <img src="http://image.zhangxinxu.com/image/study/s/s128/mm9.jpg" alt="">
+            <br> test
+        </div>
+
+        <div class="item">
+            <img src="http://image.zhangxinxu.com/image/study/s/s128/mm9.jpg" alt="">
+            <br> test
+        </div>
+
+        <div class="item">
+            <img src="http://image.zhangxinxu.com/image/study/s/s128/mm9.jpg" alt="">
+            <br> test
+        </div>
+
+        <div class="item fix">
+            <!--这里面有个宽度去不掉，得在外层加font-size:0; 里面再恢复字体就可以了-->
+        </div>
+    </div>
+</body>
+
+</html>
