@@ -30,6 +30,7 @@ div{ display:table-cell; vertical-align:middle; text-align:center}
 table-layout:fixed;
 这个性能会好一些，是在没有填充内容的时候，把cell的宽度计算好
 所以，他的必要条件是table的width是已经有了的；width:100%;
+这里的width:1%, 其实是没有必要的，完全不需要！！！
 ```
 
 
@@ -48,7 +49,6 @@ table-layout:fixed;
 }
 .table .cell{
     display:table-cell;
-    width:1%;
 }
 ```
 
