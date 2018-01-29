@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            height:400px;
+        }
+        .left{
+            width:100%;
+            margin-left: -200px;
+            background: #09C;
+        }
+        .left>.content{
+            margin-left: 200px;
+        }
+
+        .right{
+            float: right;
+            width:200px;
+            background: #f60;
+        }
+    </style>
+</head>
+<body>
+    <blockquote>
+        <h4>知识点：</h4>
+        <p>margin的负值不会改变doc flow</p>
+        <p>负值之后，下面的元素可上移来填充那空出来的空间</p>
+        <p>右这的元素float:right；结构放在左边，轻松实现，而且没有float问题</p>
+        <p>还有一个优点：一般的content会是希望SEO先收录的，所以，放在前面，顺序渲染会更合理</p>
+        <p>缺点：多一个标签</p>
+    </blockquote>
+    <div class="right">
+        left content 200px
+    </div>
+    <div class="left">
+        <div class="content">
+             Right content!!!!
+        </div>
+    </div>
+</body>
+</html>

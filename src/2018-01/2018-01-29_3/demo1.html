@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>左右栏宽度固定，中间栏宽度自适应</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            min-width:600px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+        .main{
+            width: 100%;
+            float:left;
+        }
+        .content{
+            margin:0 250px;
+            background: #000;
+            height: 200px;
+        }
+        .fl,.fr{
+            float: left;
+            width:240px;
+            height:200px;
+        }
+        .fl{
+            margin-left: -100%;
+            background: red;
+        }
+        .fr{
+            margin-left: -240px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="content">main</div>
+</div>
+<div class="fl">left</div>
+<div class="fr">right</div>
+</body>
+</html>
