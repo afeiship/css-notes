@@ -7,26 +7,37 @@
     <title>Document</title>
     <style>
         div{
+            box-sizing: border-box;
             height:400px;
+            padding:20px;
         }
         .left{
-            float: left;
+            float: right;
            width:200px;
            background: #09c;
         }
 
         .right{
+            float: left;
             width:100%;
             background: #f60;
+            margin-left: -200px;
+        }
+        .right .content{
+            margin-left: 200px;
         }
     </style>
 </head>
 <body>
+    <h4>谁auto,谁的内容重要，谁应该快速加载，谁就应该放前面</h4>
+    <h5>这个实现，调整一下layout 其实可以更简单，但就达不到用-margin的目的了</h5>
+    <div class="right">
+        <div class="content">
+            right content!
+        </div>
+    </div>
     <div class="left">
         left content
-    </div>
-    <div class="right">
-        right content!
     </div>
 </body>
 </html>
