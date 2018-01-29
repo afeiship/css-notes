@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            height:400px;
+        }
+        .middle{
+            width: 100%;
+            float: left;
+        }
+       .middle .content{
+            margin: 0 260px 0 200px;
+            background: #09c;
+        }
+        .left{
+            float: left;
+            width:200px;
+            background: #eee;
+            margin-left: -100%;;
+        }
+        .right{
+            float: left;
+            width:260px;
+            background: #f60;
+            margin-left: -260px;
+        }
+    </style>
+</head>
+<body>
+    <blockquote>
+        <h4>思路：</h4>
+        <p>1. 首先，middle 得放最前面，width:100%, 因为他是自适应的部分</p>
+        <p>2. 然后，因为要考虑到左200,右260，所以，必然有一个content，margin: 0 260px 0 200px;</p>
+        <p>3. 希望下面的元素与middle一排，必然，需要flaot:left(这里有问题/right;都可以？？？)</p>
+        <p>4. 因为left需要到最左边，但整个的100%都被.content的外层占据了，所以，这里需要margin-left:-100%;才可以达到左边</p>
+        <p>5. 所以，右边的在屏幕外，只要移动他本身的宽度就可以达到右侧了</p>
+        <p>6. 下图已经说明一切了</p>
+    </blockquote>
+    <p align='center'>
+        <img width="280" src="2018-01-29-14-19-14.png" alt="">
+    </p>
+    <div class="middle">
+        <div class="content">Middle content</div>
+    </div>
+    <div class="left">left</div>
+    <div class="right">Right</div>
+</body>
+</html>
