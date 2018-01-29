@@ -5,25 +5,36 @@
     <title>test</title>
 <style>
     .out{
+        /*
         height:400px;
         width:100%;
         background-color:red;
         display:table;
+        */
+        display: table;
+        height:100%;
     }
+    html,body{ height: 100%;}
     .in{
         background-color:black;
         color:white;
+
         display:table-cell;
         vertical-align:middle;
     }
 </style>
 </head>
 <body>
-    <div class='out'>
+    <!-- table-cell 里的table 都可以不用添加，因为最后都会自动加上 -->
+    <!-- 不过，单独的 table-cell 无法去用height:100%,因为他会根据 table 的高度来自适应 -->
+    <!--div class='out'></div-->
+    <div class="out">
         <div class='in'>
             <p>我是多行文本，</p>
             <p>我要垂直居中啊啊啊啊啊！</p>
         </div>
     </div>
+    
+    
 </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table-cell 1% percent.</title>
+    <style>
+        .blank{
+            height:20px;
+        }
+        .table{
+            /* talbe/table-row 都可以 */
+            /* display: table-row; */
+            /* 这里不要也可以，因为div完全可以理解 */
+        }
+        .cell{
+            display: table-cell;
+            width:1%;
+        }
+
+        .cell-eq{
+            display: table-cell;
+            width:49%;
+        }
+        .bg1{
+            background: #eee;
+        }
+        .bg2{
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h2>这个并不能让他们等宽</h2>
+    <div class="table">
+        <div class="cell bg1">a</div>
+        <div class="cell bg2">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+                vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+                mi vitae est. Mauris placerat eleifend leo.
+        </div>
+    </div>
+
+    <div class="blank"></div>
+
+    <h2>接近份数的比例才可以eq-width</h2>
+    <div class="table">
+            <div class="cell-eq bg1">a</div>
+            <div class="cell-eq bg2">
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+                    vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+                    mi vitae est. Mauris placerat eleifend leo.
+            </div>
+        </div>
+    
+</body>
+</html>
