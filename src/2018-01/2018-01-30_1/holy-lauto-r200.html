@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{ height:200px;}
+        .wrapper{
+            padding-right: 200px;;
+        }
+        .col{
+            float: left;
+        }
+        .lauto{
+            width:100%;
+            background: #f9c;
+        }
+        .right{
+            width:200px;
+            margin-right:-200px;
+            background: #09c;
+        }
+    </style>
+</head>
+
+<body>
+    <blockquote>
+        <h3>解释一下</h3>
+        <p>1. wrapper: padding-right:200px; 决定了下面的container 只有100% - 200px 的宽度</p>
+        <p> float:left; 让lauto 和 right 在一排，但由于lauto已经占满了</p>
+        <p> right: margin-right: -200px; 正好可以落在右侧的： 200px的空里 </p>
+    </blockquote>
+    <div class="wrapper">
+        <div class="col lauto">
+            AUTO
+        </div>
+        <div class="col right">RIGHT</div>
+    </div>
+</body>
+
+</html>

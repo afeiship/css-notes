@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{ height:200px;}
+        .wrapper{
+            padding-left: 200px;;
+        }
+        .col{
+            float: left;
+        }
+        .rauto{
+            width:100%;
+            background: #f9c;
+        }
+        .left{
+            width:200px;
+            margin-left:-100%;
+            left:-200px;
+            position: relative;
+            background: #90c;
+        }
+    </style>
+</head>
+
+<body>
+    <blockquote>
+        <h3>解释一下</h3>
+        <p>1. wrapper: padding-left:200px; 决定了下面的container 只有100% - 200px 的宽度</p>
+        <p> float:left; 让 rauto 和 left 在一排，但由于 rauto 已经占满了</p>
+        <p> right: margin-left: -100%; 正好是相对左，上，移动 </p>
+    </blockquote>
+    <div class="wrapper">
+        <div class="col rauto">Rauto</div>
+        <div class="col left">LEFT</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Holy grails layout</title>
+    <style>
+            body{padding:0;margin:0;}
+            div{ height: 200px;}
+            .wrapper{
+                height:100%;
+                zoom:1;
+                overflow:hidden;
+                padding:0 200px 0 150px;  /*预留空位：左内补丁=LC栏宽度  右内补丁=LR栏宽度*/
+            }
+            .wrapper:after{clear:both;content:'\20';height:0;visibility:hidden;}
+            .column{
+                position: relative;
+                float: left;
+            }
+            #main{
+                width:100%;
+                background: #eee;
+            }
+            #lc{
+                margin-left: -100%;
+                width:150px;
+                left: -150px;
+                background: #09c;
+            }
+
+            #rc{
+                width:200px;
+                margin-right: -200px;
+                background: #90c;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="main" class="column">Main</div>
+        <div id="lc" class="column">Left</div>
+        <div id="rc" class="column">Right</div>
+    </div>
+</body>
+
+</html>
