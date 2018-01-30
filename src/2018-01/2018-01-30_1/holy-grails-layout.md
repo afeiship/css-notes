@@ -7,6 +7,22 @@
 + http://www.elonglau.com/33.html
 
 
+## 深入理解 margin 负值：
++ https://www.cnblogs.com/xiaohuochai/p/5314289.html
+
+```conf
+虽然margin可以应用到所有元素，但display属性不同时，表现也不同
+【1】block元素可以使用四个方向的margin值
+【2】inline元素使用上下方向的margin值无效
+【3】inline-block使用上下方向的margin负值看上去无效
+
+[注意]inline-block使用上下方向的margin负值只是看上去无效，
+这与其默认的vertical-align:baseline有关系，当垂直对齐的属性值为其他值时，则会显示不同的视觉效果
+```
+
+
+
+
 ## 知识点：
 ```conf
 经典三列布局，也叫做圣杯布局【Holy Grail of Layouts】是Kevin Cornell在2006年提出的一个布局模型概念，在国内最早是由淘宝UED的工程师传播开来，在中国也有叫法是双飞翼布局，它的布局要求有几点：
