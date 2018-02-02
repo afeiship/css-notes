@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .auto {
+            width: 1000px;
+            margin: 20px auto;
+            height: 1%;
+            overflow: hidden;
+        }
+
+        ul {
+            margin-right: -13.33px;
+        }
+
+        li {
+            float: left;
+            margin-right: 13.33px;
+            margin-bottom: 10px;
+            width: 240px;
+            height: 180px;
+            background: #fac;
+        }
+
+        /* n 表示 排数，最小值为0 */
+        li:nth-child(4n+1):nth-last-child(-n+4),
+        li:nth-child(4n+1):nth-last-child(-n+4) ~ li{
+            background: #09c;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="auto">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+    <div class="auto">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

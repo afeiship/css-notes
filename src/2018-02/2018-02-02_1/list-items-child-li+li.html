@@ -12,17 +12,18 @@
         .box{width:1000px;margin: 0 auto;}
 
         ul{overflow: hidden;}
-        ul{
-            margin-right: -13.33px;
-        }
         li{
             float: left;
-            width:240px;
+            width:320px;
             height: 200px;
             background: #ccc;
             list-style: none;
-            margin-right: 13.33px;
             margin-bottom: 20px;
+        }
+        /* OR: 发现这种方案只适合于单排 */
+        li + li,
+        li ~ li {
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -39,18 +40,8 @@
             <li></li>
             <li></li>
             <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
         </ul>
     </div>
-
-    <script>
-        var el = document.querySelector('.box');
-        var elUl = document.querySelector('.box ul');
-        console.log(el.offsetWidth);
-        console.log(elUl.offsetWidth);
-    </script>
 </body>
 
 </html>

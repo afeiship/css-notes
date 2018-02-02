@@ -24,13 +24,20 @@
             margin-right: 13.33px;
             margin-bottom: 20px;
         }
+
+        
+        .grid-4 li:nth-child(4n+1):nth-last-child(-n+4),
+        .grid-4 li:nth-child(4n+1):nth-last-child(-n+4) ~ li {
+        background: #fac;
+      }
+      
     </style>
 </head>
 
 <body>
     <div class="banner"></div>
     <div class="box">
-        <ul>
+        <ul class="grid-4">
             <li></li>
             <li></li>
             <li></li>
