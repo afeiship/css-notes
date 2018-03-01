@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes donut-spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
+        .donut {
+            display: inline-block;
+            border: 4px solid rgba(0, 0, 0, 0.25);
+            border-left-color: #f60;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            animation: donut-spin 1.2s linear infinite;
+        }
+        .abs-center{
+            position: absolute;
+            margin:auto;
+            top:-37.5%; right:0; bottom:0; left:0;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="donut abs-center"></div>
+    
+</body>
+</html>
