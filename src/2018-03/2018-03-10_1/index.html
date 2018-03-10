@@ -7,17 +7,26 @@
     <title>css-dot-right-top</title>
     <style>
         .block{ position: relative; width: 200px; height: 200px; border: 1px solid sandybrown; }
+        .block{ margin-bottom: 20px;}
         .dot{ position: absolute; height:20px; border-radius: 10px; background: red; right: 0; top:0; transform: translate(50%,-50%);}
-        .dot{ font-size:12px; color:#fff; line-height: 20px; padding:0 5px;}
+        .dot{ font-size:12px; color:#fff; line-height: 20px; min-width:10px; padding:0 5px; text-align: center;}
     </style>
 </head>
 <body>
-    <div class="block">
-        <div class="dot">112334</div>
-        <div class="bd">
-            <h1>I am content!</h1>
-            <p>I am desc!</p>
+        <div class="block">
+            <div class="dot">112334</div>
+            <div class="bd">
+                <h1>I am content!</h1>
+                <p>I am desc!</p>
+            </div>
         </div>
-    </div>
+        
+        <div class="block">
+            <div class="dot">2</div>
+            <div class="bd">
+                <h1>I am content!</h1>
+                <p>I am desc!</p>
+            </div>
+        </div>
 </body>
 </html>
