@@ -1,0 +1,22 @@
+{
+  "name": "css-notes",
+  "version": "1.0.0",
+  "description": "> Css notes.",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/css-notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afeiship/css-notes/issues"
+  },
+  "homepage": "https://github.com/afeiship/css-notes#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

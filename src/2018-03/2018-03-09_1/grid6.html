@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+        }
+
+        .clearfix:before,
+        .clearfix:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+
+        .clearfix:after {
+        clear: both;
+        }
+
+
+        ul,
+        li {
+            list-style: none
+        }
+
+        ul{
+            margin: 0 -5px;
+        }
+
+        li {
+            float: left;
+            width: 16.66%;
+        }
+        li .bd{
+            background: #ccc;
+            height: 100px;
+            margin: 5px;
+            padding: 10px;
+        }
+        .tc{
+            text-align: center;
+        }
+        header,footer{
+            line-height: 40px;
+            background: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="tc">header</header>
+    <ul class="clearfix">
+        <li>
+            <div class="bd">item</div>
+        </li>
+        <li>
+            <div class="bd">item</div>
+        </li>
+        <li>
+            <div class="bd">item</div>
+        </li>
+        <li>
+            <div class="bd">item</div>
+        </li>
+        <li>
+            <div class="bd">item</div>
+        </li>
+        <li>
+            <div class="bd">item</div>
+        </li>
+        <li>
+            <div class="bd">item</div>
+        </li>
+        <li>
+            <div class="bd">item</div>
+        </li>
+        <li>
+            <div class="bd">item</div>
+        </li>
+    </ul>
+    <footer class="tc">footer</footer>
+</body>
+
+</html>
