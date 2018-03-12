@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            padding: 10px;
+            width: 120px;
+            height: 120px;
+            border: 1px solid saddlebrown;
+            font-size: 10px;
+            margin: 0 auto 10px;
+        }
+
+        li {
+            margin-left: 10px;
+            ;
+        }
+
+        ol,
+        li {
+            padding-left: 0;
+        }
+
+        .bdr1 {
+            border-radius: 5px;
+        }
+
+        .bdr2 {
+            border-radius: 5px 50px;
+        }
+
+        .bdr3 {
+            border-radius: 5px 50px 20px;
+        }
+
+        .bdr4 {
+            border-radius: 10px 5% / 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box bdr1">上下左右</div>
+    <div class="box bdr2">
+        <ol>
+            <li>左对角: 5px</li>
+            <li>右对角: 50px:</li>
+        </ol>
+    </div>
+    <div class="box bdr3">
+        <ol>
+            <li>左上: 5px</li>
+            <li>对角: 50px </li>
+            <li>右下: 20px</li>
+        </ol>
+    </div>
+    <div class="box bdr4">
+        <p>
+            <code>border-radius: 10px 5% / 20px;</code>
+        </p>
+
+        <p>
+            <code>
+                border-radius: 10px 5% 10px 5% / 20px 20px 20px 20px;
+            </code>
+        </p>
+
+    </div>
+</body>
+
+</html>
