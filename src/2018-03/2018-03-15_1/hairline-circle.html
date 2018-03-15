@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>min-resolution-shadow</title>
+    <style>
+    .hairline-border {
+        box-shadow: 0 0 0 1px;
+    }
+    @media (min-resolution: 2dppx) {
+        .hairline-border {
+            box-shadow: 0 0 0 0.5px;
+        }
+    }
+    @media (min-resolution: 3dppx) {
+        .hairline-border {
+            box-shadow: 0 0 0 0.33333333px;
+        }
+    }
+    @media (min-resolution: 4dppx) {
+        .hairline-border {
+            box-shadow: 0 0 0 0.25px;
+        }
+    }
+    p{
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+    <p class="hairline-border">Text with a hairline border around it.</p>
+</body>
+</html>
