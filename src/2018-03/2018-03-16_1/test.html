@@ -7,11 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        .box{
+            width: 50%;
+            margin: 20px auto;
+        }
         .fieldset {
             border: none;
             border-top: 1px solid #ccc;
-            height: 1px;
-            margin-bottom: 20px;
+            padding:0;
+            margin: 60px auto;
+            width: 90%;
         }
 
         .legend {
@@ -30,17 +35,20 @@
 </head>
 
 <body>
-    <fieldset class="fieldset">
-        <legend class="legend">其他方式登录</legend>
-    </fieldset>
+    <div class="box">
+        <h1>参考：mi.com</h1>
+        <fieldset class="fieldset" style="padding-left: 20px;">
+            <legend class="legend">其他方式登录</legend>
+        </fieldset>
 
-    <fieldset class="tc fieldset">
-        <legend class="legend">其他方式登录</legend>
-    </fieldset>
+        <fieldset class="tc fieldset">
+            <legend class="legend">其他方式登录</legend>
+        </fieldset>
 
-    <fieldset class="tr fieldset">
-        <legend class="legend">其他方式登录</legend>
-    </fieldset>
+        <fieldset class="tr fieldset"  style="padding-right: 20px;">
+            <legend class="legend">其他方式登录</legend>
+        </fieldset>
+    </div>
 </body>
 
 </html>
