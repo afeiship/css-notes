@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Svg-rect</title>
+    <style>
+    /*
+    viewBox="x, y, width, height"  // x:左上角横坐标，y:左上角纵坐标，width:宽度，height:高度
+
+    http://www.zhangxinxu.com/wordpress/2014/08/svg-viewport-viewbox-preserveaspectratio/
+    */
+    </style>
+</head>
+
+<body>
+    <svg width="400" height="200" viewBox="0 0 400 200" style="border:1px solid #cd0000;">
+        <rect x="10" y="10" width="150" height="150" fill="#cd0000" />
+    </svg>
+
+    <svg width="400" height="200" viewBox="0 0 200 200" style="border:1px solid #cd0000;">
+        <rect x="10" y="10" width="150" height="150" fill="#cd0000" />
+    </svg>
+
+    <svg width="400" height="200" viewBox="0 0 200 100" style="border:1px solid #cd0000;">
+        <rect x="10" y="10" width="150" height="150" fill="#cd0000" />
+    </svg>
+</body>
+
+</html>
