@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Default selector</title>
+    <style>
+        input:default+label::after {
+            content: '（推荐）';
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <input type="radio" name="pay" id="pay0" value="0">
+        <label for="pay0">支付宝</label>
+    </p>
+    <p>
+        <input type="radio" name="pay" id="pay1" value="1" checked>
+        <label for="pay1">微信</label>
+    </p>
+    <p>
+        <input type="radio" name="pay" id="pay2" value="2">
+        <label for="pay2">银行卡</label>
+    </p>
+</body>
+
+</html>
