@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Labeltext form layout</title>
+    <style>
+        body{
+            font-size: 14px;
+        }
+        .tabular{
+            border-color: #eee;
+        }
+        .tabular p {
+            overflow: hidden;
+            padding-left: 20%;
+        }
+        .tabular p label {
+            font-weight: bold;
+            float: left;
+            text-align: right;
+            margin-left: -20%;
+            width: 18%;
+        }
+
+        .tabular p input {
+            float: left;
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset class="box tabular">
+        <legend>信息</legend>
+        <p>
+            <label for="user_firstname">名字
+                <span class="required"> *</span>
+            </label>
+            <input type="text" value="飞" name="user[firstname]" id="user_firstname">
+        </p>
+        <p>
+            <label for="user_lastname">姓氏
+                <span class="required"> *</span>
+            </label>
+            <input type="text" value="郑" name="user[lastname]" id="user_lastname">
+        </p>
+        <p>
+            <label for="user_mail">邮件地址
+                <span class="required"> *</span>
+            </label>
+            <input type="text" value="1290657123@qq.com" name="user[mail]" id="user_mail">
+        </p>
+        <p>
+            <label for="user_language">语言</label>
+            <select name="user[language]" id="user_language">
+                <option value="">(auto)</option>
+                <option value="sq">Albanian (Shqip)</option>
+                <option value="ar">Arabic (عربي)</option>
+                <option value="az">Azerbaijani (Azeri)</option>
+                <option value="eu">Basque (Euskara)</option>
+                <option value="bs">Bosnian (Bosanski)</option>
+                <option value="bg">Bulgarian (Български)</option>
+                <option value="ca">Catalan (Català)</option>
+                <option value="hr">Croatian (Hrvatski)</option>
+                <option value="cs">Czech (Čeština)</option>
+                <option value="da">Danish (Dansk)</option>
+                <option value="nl">Dutch (Nederlands)</option>
+                <option value="en">English</option>
+                <option value="en-GB">English (British)</option>
+                <option value="et">Estonian (Eesti)</option>
+                <option value="fi">Finnish (Suomi)</option>
+                <option value="fr">French (Français)</option>
+                <option value="gl">Galician (Galego)</option>
+                <option value="de">German (Deutsch)</option>
+                <option value="el">Greek (Ελληνικά)</option>
+                <option value="he">Hebrew (עברית)</option>
+                <option value="hu">Hungarian (Magyar)</option>
+                <option value="id">Indonesian (Bahasa Indonesia)</option>
+                <option value="it">Italian (Italiano)</option>
+                <option value="ja">Japanese (日本語)</option>
+                <option value="ko">Korean (한국어)</option>
+                <option value="lv">Latvian (Latviešu)</option>
+                <option value="lt">Lithuanian (lietuvių)</option>
+                <option value="mk">Macedonian (Македонски)</option>
+                <option value="mn">Mongolian (Монгол)</option>
+                <option value="no">Norwegian (Norsk bokmål)</option>
+                <option value="fa">Persian (پارسی)</option>
+                <option value="pl">Polish (Polski)</option>
+                <option value="pt">Portuguese (Português)</option>
+                <option value="pt-BR">Portuguese/Brasil (Português/Brasil)</option>
+                <option value="ro">Romanian (Română)</option>
+                <option value="ru">Russian (Русский)</option>
+                <option value="sr-YU">Serbian (Srpski)</option>
+                <option value="sr">Serbian Cyrillic (Српски)</option>
+                <option selected="selected" value="zh">Simplified Chinese (简体中文)</option>
+                <option value="sk">Slovak (Slovenčina)</option>
+                <option value="sl">Slovene (Slovenščina)</option>
+                <option value="es">Spanish (Español)</option>
+                <option value="es-PA">Spanish/Panama (Español/Panamá)</option>
+                <option value="sv">Swedish (Svenska)</option>
+                <option value="th">Thai (ไทย)</option>
+                <option value="zh-TW">Traditional Chinese (繁體中文)</option>
+                <option value="tr">Turkish (Türkçe)</option>
+                <option value="uk">Ukrainian (Українська)</option>
+                <option value="vi">Vietnamese (Tiếng Việt)</option>
+            </select>
+        </p>
+
+
+    </fieldset>
+</body>
+
+</html>
