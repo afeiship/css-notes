@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> eq-cells </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .wrap {
+            width: 80%;
+            margin: 40px auto;
+            overflow: hidden;
+            border:1px solid salmon;
+        }
+
+        .eq-cell {
+            width: 6.25%;
+            padding-top: 6.25%;
+            float: left;
+            position: relative;
+        }
+        .eq-cell:before{
+            content:'';
+            position: absolute;
+            background: #eee;
+            left:0;top:0;right:0;bottom:0;
+        }
+        .bd{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+        <div class="eq-cell">
+            <button class="bd">ITEM</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
