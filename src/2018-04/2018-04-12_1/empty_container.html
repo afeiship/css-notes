@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Empty container</title>
+    <style>
+        .empty {
+            min-height: 50px;
+            border: 1px solid #eee;
+        }
+
+        .empty>.bd:empty:before {
+            content: "\8BF7\62D6\5165\53F3\4FA7\63A7\4EF6\4EE5\65B0\589E...";
+            display: block;
+            text-align: center;
+            color: #bbb;
+            line-height: 50px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="empty">
+        <div class="bd">
+            I have content...
+        </div>
+    </div>
+
+    <div class="empty">
+        <div class="bd"></div>
+    </div>
+</body>
+
+</html>
