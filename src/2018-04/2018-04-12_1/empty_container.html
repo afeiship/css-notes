@@ -10,28 +10,30 @@
         .empty {
             min-height: 50px;
             border: 1px solid #eee;
+            margin-bottom: 20px;
         }
 
-        .empty>.bd:empty:before {
+        .empty:empty:before {
             content: "\8BF7\62D6\5165\53F3\4FA7\63A7\4EF6\4EE5\65B0\589E...";
             display: block;
             text-align: center;
             color: #bbb;
             line-height: 50px
         }
+
+        /*
+        中间的子元素，其实是有个空格(或者说是换行，更加的准确)
+        */
     </style>
 </head>
 
 <body>
     <div class="empty">
-        <div class="bd">
-            I have content...
-        </div>
+        I have content...
     </div>
-
     <div class="empty">
-        <div class="bd"></div>
     </div>
+    <div class="empty"></div>
 </body>
 
 </html>
