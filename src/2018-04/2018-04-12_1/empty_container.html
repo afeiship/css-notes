@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Empty container</title>
     <style>
+        .container {
+            width: 320px; 
+            margin: 40px
+        }
+
         .empty {
             min-height: 50px;
             border: 1px solid #eee;
@@ -14,7 +19,7 @@
         }
 
         .empty:empty:before {
-            content: "\8BF7\62D6\5165\53F3\4FA7\63A7\4EF6\4EE5\65B0\589E...";
+            content: "Some placeholder elements";
             display: block;
             text-align: center;
             color: #bbb;
@@ -28,12 +33,14 @@
 </head>
 
 <body>
-    <div class="empty">
-        I have content...
+    <div class="container">
+        <div class="empty">
+            I have content...
+        </div>
+        <div class="empty">
+        </div>
+        <div class="empty"></div>
     </div>
-    <div class="empty">
-    </div>
-    <div class="empty"></div>
 </body>
 
 </html>
