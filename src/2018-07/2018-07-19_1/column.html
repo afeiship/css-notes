@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>column</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .row {
+            -webkit-columns:auto 4; /* Safari 和 Chrome */
+            column-gap:20px;
+        }
+
+        .row .col {
+            background: #ccc;
+            margin-bottom: 40px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">Col1</div>
+        <div class="col">Col1</div>
+        <div class="col">Col1</div>
+        <div class="col">Col1</div>
+    </div>
+
+    <div class="row">
+        <div class="col">Col1</div>
+        <div class="col">Col1</div>
+        <div class="col">Col1</div>
+        <div class="col">Col1</div>
+        <div class="col">Col1</div>
+    </div>
+</body>
+
+</html>
