@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .triangle-rt{
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height:100px;
+        box-sizing: border-box;
+        border-top:50px solid orange;
+        border-right:100px solid orange;
+        border-left:100px solid transparent;
+        border-bottom:50px solid transparent;
+    }
+    .triangle-rt .bd{
+        position: absolute;
+        right: 0;
+        top:0;
+        margin:10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="triangle-rt">
+        <div class="bd">Content</div>
+    </div>
+</body>
+</html>
