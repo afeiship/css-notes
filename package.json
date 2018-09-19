@@ -10,13 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/afeiship/css-notes.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "afei",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/afeiship/css-notes/issues"
   },
   "homepage": "https://github.com/afeiship/css-notes#readme",
-  "dependencies": {
-    "express": "^4.16.2"
+  "dependencies": {},
+  "keywords": [
+    "css",
+    "scss"
+  ],
+  "devDependencies": {
+    "express": "^4.16.3"
   }
 }
