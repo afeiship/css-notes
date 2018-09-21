@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="http://image.zhangxinxu.com/image/blog/201701/64-0-mark.png" width="554" height="36" alt="位置移动标注示意图"
+        class="alignnone">
+
+    <p>
+        A = A + (B - A) / 2
+    </p>
+    <script>
+        // requestAnimationFrame的兼容处理
+        if (!window.requestAnimationFrame) {
+            requestAnimationFrame = function (fn) {
+                setTimeout(fn, 17);
+            };
+        }
+        Math.easeout = function (A, B, rate, callback) {
+            if (A == B || typeof A != 'number') {
+                return;
+            }
+            B = B || 0;
+            rate = rate || 2;
+
+            var step = function () {
+                A = A + (B - A) / rate;
+
+                if (A < 1) {
+                    callback(B, true);
+                    return;
+                }
+                callback(A, false);
+                requestAnimationFrame(step);
+            };
+            step();
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Animate1</title>
+    <style>
+        #block {
+            width: 100px;
+            height: 100px;
+            background: #007aff;
+            position: absolute;
+            left: 0;
+            top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="move">Start Move</button>
+    <div id="block"></div>
+    <script>
+        /*
+        
+        比方说我们要从位置0的地方运动到100
+        时间是10秒钟，此时，b, c, d三个参数就已经确认了
+        b初始值就是0，
+        变化值c就是100-0就是100
+        最终的时间就是10，此时，只要给一个小于最终时间10的值，
+        Tween.Linear就会返回当前时间应该的坐标，例如，假设此时动画进行到第5秒，也就是t为5，则得到（截图自Chrome控制台）
+        */
+        var btnMove = document.getElementById('move');
+        var block = document.getElementById('block');
+        var linear = function (t, b, c, d) {
+            return c * t / d + b;
+        };
+        btnMove.onclick = function () {
+            var timer = setInterval(function () {
+                var dist = parseFloat(parseFloat(getComputedStyle(block).left));
+                block.style.left = dist + 'px';
+            }, 10);
+        };
+    </script>
+</body>
+
+</html>

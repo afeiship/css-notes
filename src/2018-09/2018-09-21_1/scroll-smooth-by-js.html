@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScrollBehavior</title>
+    <style>
+        /* document.documentElement */
+        html {
+            position: relative;
+            height: 2000px;
+        }
+
+        button {
+            border: none;
+            width: 10%;
+            right: 0;
+            position: fixed;
+            margin-bottom: 20px;
+            padding: 14px;
+            background: #007aff;
+            color: #fff;
+        }
+
+        header,
+        footer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #ff2d55;
+            padding: 20px;
+        }
+
+        footer {
+            background: #007aff;
+            top: auto;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <footer>FOOTER</footer>
+    <button id="top" style="top: 10px">TO TOP</button>
+    <button id="bottom" style="top: 80px">TO Bottom</button>
+    <script>
+        var myScrollTo = function (position, timeout) {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+                direction = position - scrollTop > 0 ? 1 : -1,
+                distance = Math.abs(position - scrollTop),
+                split = distance / 50,
+                _timeout;
+
+            if (position !== scrollTop) {
+                timeout = timeout || 1000;
+                split *= direction;
+
+                _timeout = setInterval(function () {
+                    scrollTop += split;
+                    distance -= Math.abs(split);
+                    if (0 >= distance) {
+                        window.scrollTo(0, position);
+                        clearInterval(_timeout);
+                        _timeout = null;
+                    } else {
+                        window.scrollTo(0, scrollTop);
+                    }
+                }, timeout / 100);
+            }
+        };
+        var btnTop = document.getElementById('top');
+        var btnBottom = document.getElementById('bottom');
+
+        btnTop.onclick = function () {
+            myScrollTo(0,1000);
+        }
+        btnBottom.onclick = function () {
+            myScrollTo(2000, 1000);
+        }
+    </script>
+</body>
+
+</html>
