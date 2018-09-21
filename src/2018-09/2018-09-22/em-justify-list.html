@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EM justify list</title>
+    <style>
+        /*
+        https://www.zhangxinxu.com/study/201708/percent-padding-auto-layout.html
+        */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .list {
+            margin: 0 -0.5em;
+            overflow: hidden;
+            /* font-size: 0; */
+            /* white-space: nowrap; */
+        }
+
+        .list>.item {
+            /* font-size: 14px; */
+            /* display: inline-block; */
+            float: left;
+            width: calc(33.33% - 1em);
+            margin: 0 .5em;
+        }
+
+        .item:nth-child(2n) {
+            background: #eee;
+        }
+
+        .item:nth-child(2n-1) {
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>一行3列</h1>
+        <div class="list">
+            <div class="item">
+                <img src="http://placeholder.qiniudn.com/80x80" alt="">
+                <h1>我是标题</h1>
+                <p>我是描述</p>
+            </div>
+            <div class="item">
+                <img src="http://placeholder.qiniudn.com/80x80" alt="">
+                <h1>我是标题</h1>
+                <p>我是描述</p>
+            </div>
+            <div class="item">
+                <img src="http://placeholder.qiniudn.com/80x80" alt="">
+                <h1>我是标题</h1>
+                <p>我是描述</p>
+            </div>
+            <div class="item">
+                <img src="http://placeholder.qiniudn.com/80x80" alt="">
+                <h1>我是标题</h1>
+                <p>我是描述</p>
+            </div>
+            <div class="item">
+                <img src="http://placeholder.qiniudn.com/80x80" alt="">
+                <h1>我是标题</h1>
+                <p>我是描述</p>
+            </div>
+            <div class="item">
+                <img src="http://placeholder.qiniudn.com/80x80" alt="">
+                <h1>我是标题</h1>
+                <p>我是描述</p>
+            </div>
+            <div class="item">
+                <img src="http://placeholder.qiniudn.com/80x80" alt="">
+                <h1>我是标题</h1>
+                <p>我是描述</p>
+            </div>
+            <div class="item">
+                <img src="http://placeholder.qiniudn.com/80x80" alt="">
+                <h1>我是标题</h1>
+                <p>我是描述</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
