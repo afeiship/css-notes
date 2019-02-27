@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{ margin:0; padding:0; }
+        .nav { height: 20px;}
+        .nav>div{
+            float: left;
+            height: 20px;
+        }
+        .nav .left,
+        .nav .right{
+            border: 1px solid seagreen;
+            width: 32.2%;
+            background: #eee;
+        }
+        .nav .middle{
+            width: 33.34%;
+            position: relative;
+        }
+
+/* http://apps.eky.hk/css-triangle-generator/ */
+.triangle-wrapper{
+    position: absolute;
+    top:0;
+    height: 20px;
+    width: 40px;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -20px;
+    border:1px solid sienna;
+}
+        .triangle{
+            position: absolute;
+            top: -20px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px;
+            border-color: #eeeeee #eeeeee transparent #eeeeee;
+        }
+        .triangle-left,
+        .triangle-right{
+            position: absolute;
+            width: calc(50% - 20px);
+            background: #eee;
+            height: 20px;
+            border:1px solid salmon;
+        }
+        .triangle-right{
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left"></div>
+        <div class="middle">
+            <div class="triangle-left"></div>
+            <div class="triangle-wrapper">
+                <div class="triangle"></div>
+            </div>
+            <div class="triangle-right"></div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
