@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    .wrap{
+        width: 500px;
+        height: 20px;
+        /* overflow: hidden; */
+        /* background: #eee; */
+        position: relative;
+    }
+    .circle{
+        /* border: 1px solid #f00; */
+        border:20px solid #eee;
+        border-color: #eee #eee transparent transparent;
+        width: 40px;
+        /* height: 40px; */
+        margin: 0 auto;
+        /* background: #fff; */
+        position: relative;
+        border-radius: 20px;
+        /* transform:  translateY(-50%) rotate(315deg); */
+        /* margin-top: -10px; */
+    }
+    .left{
+        border:1px solid saddlebrown;
+        top:0;
+        left:0;
+        height: 20px;
+        background: #eee;
+        width: calc(50% - 20px);
+    }
+    .right{
+        border:1px solid saddlebrown;
+        top:0;
+        right:0;
+        position: absolute;
+        height: 20px;
+        background: #eee;
+        width: calc(50% - 20px);
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left"></div>
+        <div class="circle"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

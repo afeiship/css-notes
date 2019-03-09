@@ -12,22 +12,27 @@
     .arrow1{
         width: 60px;
         height: 150px;
-        background: linear-gradient(-45deg,#0f0 30px,#00adb5 0) 0 100%/50% 100% no-repeat;
+        background: linear-gradient(-45deg,#0f0 30px,#f60 0) 0 100%/50% 100% no-repeat;
     }
     .arrow2{
         width: 60px;
         height: 150px;
-        background: linear-gradient(45deg,#0f0 30px,#00adb5 0) 0 100%/50% 100% no-repeat;
+        background: linear-gradient(45deg,#0f0 30px,#f60 0) 0 100%/50% 100% no-repeat;
     }
 
     .arrow-dbl{
         width: 60px;
-        height: 150px;
-         background: linear-gradient(-45deg,transparent 42.42641px,#00adb5 0) 0 100%/50% 100% no-repeat,linear-gradient(45deg,transparent 42.42641px,#00adb5 0) 100% 100%/50% 100% no-repeat;
+        height: 30px;
+        /* 42.42641 = 30 *1.414 */
+         background: linear-gradient(-45deg,transparent 42.42641px,#f60 0) 0 0%/100% 100% no-repeat,linear-gradient(45deg,transparent 42.42641px,#f60 0) 100% 0%/100% 100% no-repeat;
     }
     </style>
 </head>
 <body>
+    <h2>镂空原理</h2>
+    <p>
+        <center><img width="800" src="https://ws4.sinaimg.cn/large/006tKfTcgy1g0wk847r8ij313s0u0gz0.jpg" /></center>
+    </p>
     <div class="arrow1"> </div><div class="arrow2"> </div>
     <div class="arrow-dbl"></div>
 </body>
