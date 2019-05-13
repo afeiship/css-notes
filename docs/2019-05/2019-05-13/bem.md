@@ -22,4 +22,5 @@
 ```
 
 ## resources
+- http://getbem.com/naming/
 - https://www.cnblogs.com/dujishi/p/5862911.html
