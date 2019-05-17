@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Css Drag</title>
+    <style>
+      #drag_me {
+        width: 100px;
+        height: 100px;
+        background: #eee;
+        border: 1px solid rebeccapurple;
+        -webkit-user-drag: element;
+      }
+    </style>
+    
+  </head>
+  <body>
+      <!-- https://pjchender.blogspot.com/2017/08/html5-drag-and-drop-api.html -->
+      <!-- https://stackoverflow.com/questions/13526712/make-div-draggable-using-css -->
+      <blockquote>
+          1. -webkit-user-drag: element; 在 webkit 里可以用直接用这个CSS代替 draggable 的功能
+          2. draggable 是 HTML5 里支持的
+      </blockquote>
+    <div id="drag_me">
+      Your draggable content here
+    </div>
+  </body>
+</html>
