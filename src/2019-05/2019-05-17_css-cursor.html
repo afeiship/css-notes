@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>CSS2 Cursor Styles</h2>
+    <p>
+      CSS2 offered relatively few options
+      <em>(hover over any element to see how the cursor changes)</em>:
+    </p>
+    <pre style="cursor:auto;margin:1px 0;border: 1px solid #000">cursor: auto</pre>
+    <pre style="cursor:inherit;margin:1px 0;border: 1px solid #000">cursor: inherit</pre>
+    <pre style="cursor:crosshair;margin:1px 0;border: 1px solid #000">cursor: crosshair</pre>
+    <pre style="cursor:default;margin:1px 0;border: 1px solid #000">cursor: default</pre>
+    <pre style="cursor:help;margin:1px 0;border: 1px solid #000">cursor: help</pre>
+    <pre style="cursor:move;margin:1px 0;border: 1px solid #000">cursor: move</pre>
+    <pre style="cursor:pointer;margin:1px 0;border: 1px solid #000">cursor: pointer </pre>
+    <pre style="cursor:progress;margin:1px 0;border: 1px solid #000">cursor: progress</pre>
+    <pre style="cursor:text;margin:1px 0;border: 1px solid #000">cursor: text</pre>
+    <pre style="cursor:wait;margin:1px 0;border: 1px solid #000">cursor: wait</pre>
+    <pre style="cursor:e-resize;margin:1px 0;border: 1px solid #000">cursor: e-resize</pre>
+    <pre style="cursor:ne-resize;margin:1px 0;border: 1px solid #000">cursor: ne-resize</pre>
+    <pre style="cursor:nw-resize;margin:1px 0;border: 1px solid #000">cursor: nw-resize</pre>
+    <pre style="cursor:n-resize;margin:1px 0;border: 1px solid #000">cursor: n-resize</pre>
+    <pre style="cursor:se-resize;margin:1px 0;border: 1px solid #000">cursor: se-resize</pre>
+    <pre style="cursor:sw-resize;margin:1px 0;border: 1px solid #000">cursor: sw-resize</pre>
+    <pre style="cursor:s-resize;margin:1px 0;border: 1px solid #000">cursor: s-resize</pre>
+    <pre style="cursor:w-resize;margin:1px 0;border: 1px solid #000">cursor: w-resize</pre>
+    <p></p>
+    <h2>CSS3 Cursor Styles</h2>
+    <p>
+      We have more styles to choose from in CSS3. These work in IE9 and the latest versions of
+      Firefox, Chrome, Safari and Opera except where indicated:
+    </p>
+    <pre style="cursor:none;margin:1px 0;border: 1px solid #000">
+cursor: none (not IE, Safari, Opera)</pre
+    >
+    <pre style="cursor:context-menu;margin:1px 0;border: 1px solid #000">
+cursor: context-menu (not Firefox, Chrome)</pre
+    >
+    <pre style="cursor:cell;margin:1px 0;border: 1px solid #000">cursor: cell (not Safari)</pre>
+    <pre style="cursor:vertical-text;margin:1px 0;border: 1px solid #000">
+cursor: vertical-text</pre
+    >
+    <pre style="cursor:alias;margin:1px 0;border: 1px solid #000">cursor: alias (not Safari)</pre>
+    <pre style="cursor:copy;margin:1px 0;border: 1px solid #000">cursor: copy (not Safari)</pre>
+    <pre style="cursor:no-drop;margin:1px 0;border: 1px solid #000">cursor: no-drop</pre>
+    <pre style="cursor:not-allowed;margin:1px 0;border: 1px solid #000">cursor: not-allowed</pre>
+    <pre style="cursor:ew-resize;margin:1px 0;border: 1px solid #000">cursor: ew-resize</pre>
+    <pre style="cursor:ns-resize;margin:1px 0;border: 1px solid #000">cursor: ns-resize</pre>
+    <pre style="cursor:nesw-resize;margin:1px 0;border: 1px solid #000">cursor: nesw-resize</pre>
+    <pre style="cursor:nwse-resize;margin:1px 0;border: 1px solid #000">cursor: nwse-resize</pre>
+    <pre style="cursor:col-resize;margin:1px 0;border: 1px solid #000">cursor: col-resize</pre>
+    <pre style="cursor:row-resize;margin:1px 0;border: 1px solid #000">cursor: row-resize</pre>
+    <pre style="cursor:all-scroll;margin:1px 0;border: 1px solid #000">cursor: all-scroll</pre>
+    <p></p>
+    <h2>Browser-Specific Cursors</h2>
+    <p>
+      Mozilla and some editions of Chrome and Safari offer a number of vendor-prefixed cursor styles
+      which are likely to become part of the CSS3 specification:
+    </p>
+    <pre style="cursor:-webkit-grab;cursor:-moz-grab;margin:1px 0;border: 1px solid #000">
+cursor: -webkit-grab; cursor: -moz-grab;</pre
+    >
+    <pre style="cursor:-webkit-grabbing;cursor:-moz-grabbing;margin:1px 0;border: 1px solid #000">
+cursor: -webkit-grabbing; cursor: -moz-grabbing;</pre
+    >
+    <pre style="cursor:-webkit-zoom-in;cursor:-moz-zoom-in;margin:1px 0;border: 1px solid #000">
+cursor: -webkit-zoom-in; cursor: -moz-zoom-in;</pre
+    >
+    <pre style="cursor:-webkit-zoom-out;cursor:-moz-zoom-out;margin:1px 0;border: 1px solid #000">
+cursor: -webkit-zoom-out; cursor: -moz-zoom-out;</pre
+    >
+    <p></p>
+    <h2>Creating Your Own Cursor</h2>
+    <p>Finally, you can create your own cursor graphic, e.g.</p>
+    <pre style="cursor:auto;margin:1px 0;border: 1px solid #000">
+cursor: url(images/cursor.cur);
+cursor: url(images/cursor.png) x y, auto;</pre
+    >
+    <p></p>
+    <p>Note:</p>
+    <ol>
+      <li>Internet Explorer requires a Windows cursor file (.cur).</li>
+      <li>
+        Firefox, Chrome and Safari require an image &#8212; I&#8217;d recommend a 24-bit
+        alpha-transparent PNG.
+      </li>
+      <li>Firefox also requires a second non-URL cursor fallback value.</li>
+      <li>It&#8217;s not supported in Opera.</li>
+      <li>
+        x and y are optional properties in Firefox, Chrome and Safari which define the precise
+        pointer position from the top-left of the graphic. If omitted, 0 0 is assumed.
+      </li>
+    </ol>
+  </body>
+</html>
