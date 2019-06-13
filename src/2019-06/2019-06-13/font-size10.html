@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FontSize: 10px</title>
+    <style>
+      .f10-1 {
+        font-size: 10px;
+      }
+
+      .f10-2 {
+          /* 这里有个情况，div 会跟着 scale(0.8)变成原来的 80%; */
+          /* 所以，有些情况并不能用 scale 解决问题 */
+        font-size: 12px;
+        transform-origin: 0, 0;
+        transform: scale(0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="f10-1">
+      当你走进。所有的梦歌词上课。着你的魔。才身上离开。关心我的想法。不怕心都有。你就不想利用北京啊不周的力量，所以就知道。高水。英雄孤独多逼我。安智三个网八天，两只孤东西。之后，总是倾心的人。
+    </div>
+
+    <div class="f10-2">
+      当你走进。所有的梦歌词上课。着你的魔。才身上离开。关心我的想法。不怕心都有。你就不想利用北京啊不周的力量，所以就知道。高水。英雄孤独多逼我。安智三个网八天，两只孤东西。之后，总是倾心的人。
+    </div>
+  </body>
+</html>
