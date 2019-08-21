@@ -1,0 +1,10 @@
+
+<svg width="14px" height="19px" viewBox="0 0 14 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tu-up3" fill-rule="nonzero">
+            <rect id="矩形" fill="#FF764E" transform="translate(7.000000, 11.500000) rotate(-180.000000) translate(-7.000000, -11.500000) " x="4" y="7" width="6" height="9"></rect>
+            <path d="M7.70710678,0.70710678 L14,7 L1.77635684e-15,7 L6.29289322,0.70710678 C6.68341751,0.31658249 7.31658249,0.31658249 7.70710678,0.70710678 Z" id="三角形" fill="#0D9B0C" transform="translate(7.000000, 3.707107) scale(-1, 1) rotate(-360.000000) translate(-7.000000, -3.707107) "></path>
+            <rect id="矩形" fill="#4E95FF" x="1" y="17" width="12" height="2"></rect>
+        </g>
+    </g>
+</svg>
