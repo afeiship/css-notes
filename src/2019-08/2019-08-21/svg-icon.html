@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .webicon {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        fill: currentColor;
+        vertical-align: -2px;
+      }
+      .container {
+        color: #00f;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://www.zhangxinxu.com/study/201407/svg-sprite-fill-color.html -->
+    <svg hidden style="display:none;">
+      <symbol>
+        <svg id="shangchuan" viewBox="-73.623 -78.055 147.245 156.11">
+          <path
+            d="M0.069,32.482L64.48-32.205H36.915v-45.85h-73.83l-0.139,45.85h-27.15L0.069,32.482z M73.623,78.055V59.632 H-73.623v18.423H73.623z"
+          ></path>
+        </svg>
+
+        <!-- 这个是 Group 的，明显不行 -->
+        <svg
+          width="22px"
+          height="22px"
+          viewBox="0 0 22 22"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g id="tu-up" stroke="none" stroke-width="1">
+            <g id="00-icon素材库" transform="translate(-177.000000, -135.000000)" fill="#4E95FF">
+              <g id="矩形-copy-3" transform="translate(181.000000, 137.000000)">
+                <g
+                  id="Group-7"
+                  transform="translate(7.000000, 8.000000) rotate(-180.000000) translate(-7.000000, -8.000000) "
+                >
+                  <rect id="矩形" x="4" y="0" width="6" height="9"></rect>
+                  <path
+                    d="M7.70710678,9.70710678 L14,16 L0,16 L6.29289322,9.70710678 C6.68341751,9.31658249 7.31658249,9.31658249 7.70710678,9.70710678 Z"
+                    id="三角形"
+                    transform="translate(7.000000, 12.500000) scale(1, -1) translate(-7.000000, -12.500000) "
+                  ></path>
+                </g>
+                <rect id="矩形" x="1" y="17" width="12" height="2"></rect>
+              </g>
+            </g>
+          </g>
+        </svg>
+
+        <svg
+          width="14px"
+          height="19px"
+          viewBox="0 0 14 19"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          id="tu-up2"
+        >
+          <path
+            d="M13,17 L13,19 L1,19 L1,17 L13,17 Z M7.61289944,0.623918174 L7.70710678,0.70710678 L14,7 L10,7 L10,16 L4,16 L4,7 L3.55271368e-15,7 L6.29289322,0.70710678 C6.65337718,0.34662282 7.22060824,0.318893285 7.61289944,0.623918174 Z"
+            id="Combined-Shape"
+          ></path>
+        </svg>
+      </symbol>
+    </svg>
+
+    <div class="container">
+      <svg class="webicon"><use xlink:href="#shangchuan"></use></svg>
+      <svg class="webicon"><use xlink:href="#tu-up"></use></svg>
+      <svg class="webicon"><use xlink:href="#tu-up2"></use></svg>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>00-icon素材库 copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="0815" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-icon素材库" transform="translate(-177.000000, -135.000000)" fill="#4E95FF">
+            <g id="矩形-copy-3" transform="translate(181.000000, 137.000000)">
+                <g id="Group-7" transform="translate(7.000000, 8.000000) rotate(-180.000000) translate(-7.000000, -8.000000) ">
+                    <rect id="矩形" x="4" y="0" width="6" height="9"></rect>
+                    <path d="M7.70710678,9.70710678 L14,16 L0,16 L6.29289322,9.70710678 C6.68341751,9.31658249 7.31658249,9.31658249 7.70710678,9.70710678 Z" id="三角形" transform="translate(7.000000, 12.500000) scale(1, -1) translate(-7.000000, -12.500000) "></path>
+                </g>
+                <rect id="矩形" x="1" y="17" width="12" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
