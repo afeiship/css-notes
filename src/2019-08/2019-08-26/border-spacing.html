@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        width: 50%;
+        margin: 40px auto;
+      }
+      table {
+        border-collapse: separate;
+        border-spacing: 10px;
+        border: 1px solid #ccc;
+      }
+      table th,
+      table td {
+        /* border: 1px solid #ccc; */
+      }
+      table .yep {
+        background: #ccc;
+      }
+    </style>
+    <!-- https://css-tricks.com/almanac/properties/b/border-spacing/ -->
+
+    <div class="container">
+      <table class="browser-support-table" width="100%">
+        <thead>
+          <tr>
+            <th class="chrome"><span>Chrome</span></th>
+            <th class="safari"><span>Safari</span></th>
+            <th class="firefox"><span>Firefox</span></th>
+            <th class="opera"><span>Opera</span></th>
+            <th class="ie"><span>IE</span></th>
+            <th class="android"><span>Android</span></th>
+            <th class="iOS"><span>iOS</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="yep" data-browser-name="Chrome">Works</td>
+            <td class="yep" data-browser-name="Safari">Works</td>
+            <td class="yep" data-browser-name="Firefox">Works</td>
+            <td class="yep" data-browser-name="Opera">Works</td>
+            <td class="yep" data-browser-name="IE">Works</td>
+            <td class="yep" data-browser-name="Android">Works</td>
+            <td class="yep" data-browser-name="iOS">Works</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
