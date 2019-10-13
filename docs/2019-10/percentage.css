@@ -1,0 +1,593 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+  width: 98%;
+  padding: 0 1%;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 1em 0;
+}
+
+.column {
+  float: left;
+  margin: 0 0 0 2%; /* This is the gutter */
+}
+
+.column:first-child {
+  margin: 0;
+}
+
+/* Centered */
+centered.column,
+.centered.column:first-child {
+  float: none;
+  margin: 0 auto;
+}
+
+/*  % = (100 - #gutters) / #columns */
+.one.column,
+.one-whole.column {
+  width: 100%;
+}
+.one-half.column {
+  width: 49%;
+} /* 100% - 1 gutter = 98% / 2 columns = 49% */
+.one-third.column {
+  width: 32%;
+} /* 100% - 2 gutters = 96% / 3 columns = 32% */
+.two-thirds.column {
+  width: 66%;
+} /* (32 * 2) + (1 * 2) = 66% */
+.one-fourth.column {
+  width: 23.5%;
+} /* 100% - 3 gutters = 94% / 4 columns = 23.5% */
+.three-fourths.column {
+  width: 74.5%;
+} /* (23.5 * 3) + (2 * 2) = 66% */
+.one-fifth.column {
+  width: 18.4%;
+} /* 100% - 4 gutters = 92% / 5 columns = 18.4% */
+.two-fifths.column {
+  width: 38.8%;
+} /* (18.4 * 2) + (1 * 2) = 38.8% */
+.three-fifths.column {
+  width: 59.2%;
+} /* (18.4 * 3) + (2 * 2) = 59.2% */
+.four-fifths.column {
+  width: 79.6%;
+} /* (18.4 * 4) + (3 * 2) = 79.6% */
+.one-sixth.column {
+  width: 15%;
+} /* 100% - 5 gutters = 90% / 6 columns = 15% */
+.one-seventh.column {
+  width: 12.5714%;
+} /* 100% - 6 gutters = 88% / 7 columns = 12.5714% */
+.one-eighth.column {
+  width: 10.75%;
+} /* 100% - 7 gutters = 86% / 8 columns = 10.75% */
+
+/* 12 col grid */
+.one-twelth.column {
+  width: 6.5%;
+} /* 100% - 11 gutters = 78% / 12 columns = 6.5% */
+.two-twelths.column {
+  width: 15%;
+} /* (6.5 * 2) + (1 * 2) = */
+.three-twelths.column {
+  width: 23.5%;
+} /* (6.5 * 3) + (2 * 2) = */
+.four-twelths.column {
+  width: 32%;
+} /* (6.5 * 4) + (3 * 2) = */
+.five-twelths.column {
+  width: 40.5%;
+} /* (6.5 * 5) + (4 * 2) = */
+.six-twelths.column {
+  width: 49%;
+} /* (6.5 * 6) + (5 * 2) = */
+.seven-twelths.column {
+  width: 57.5%;
+} /* (6.5 * 7) + (6 * 2) = */
+.eight-twelths.column {
+  width: 66%;
+} /* (6.5 * 8) + (7 * 2) = */
+.nine-twelths.column {
+  width: 74.5%;
+} /* (6.5 * 9) + (8 * 2) = */
+.ten-twelths.column {
+  width: 83%;
+} /* (6.5 * 10) + (9 * 2) = */
+.eleven-twelths.column {
+  width: 91.5%;
+} /* (6.5 * 11) + (10 * 2) = */
+.twelve-twelths.column {
+  width: 100%;
+}
+
+/* Offsets */
+/* width of columns + gutter */
+
+.offset-by-one-half {
+  margin-left: 53%;
+}
+.offset-by-one-half.column:first-child {
+  margin-left: 51%;
+}
+.offset-by-one-third {
+  margin-left: 36%;
+}
+.offset-by-one-third.column:first-child {
+  margin-left: 34%;
+}
+.offset-by-two-thirds {
+  margin-left: 70%;
+}
+.offset-by-two-thirds.column:first-child {
+  margin-left: 68%;
+}
+.offset-by-one-fourth {
+  margin-left: 27.5%;
+}
+.offset-by-one-fourth.column:first-child {
+  margin-left: 25.5%;
+}
+.offset-by-three-fourths {
+  margin-left: 78.5%;
+}
+.offset-by-three-fourths.column:first-child {
+  margin-left: 76.5%;
+}
+.offset-by-one-fifth {
+  margin-left: 22.4%;
+}
+.offset-by-one-fifth.column:first-child {
+  margin-left: 20.4%;
+}
+.offset-by-one-twelth {
+  margin-left: 10.5%;
+}
+.offset-by-one-twelth.column:first-child {
+  margin-left: 8.5%;
+}
+.offset-by-two-twelths {
+  margin-left: 19%;
+}
+.offset-by-two-twelths.column:first-child {
+  margin-left: 17%;
+}
+.offset-by-three-twelths {
+  margin-left: 27.5%;
+}
+.offset-by-three-twelths.column:first-child {
+  margin-left: 25.5%;
+}
+.offset-by-four-twelths {
+  margin-left: 36%;
+}
+.offset-by-four-twelths.column:first-child {
+  margin-left: 34%;
+}
+.offset-by-five-twelths {
+  margin-left: 44.5%;
+}
+.offset-by-five-twelths.column:first-child {
+  margin-left: 42.5%;
+}
+.offset-by-six-twelths {
+  margin-left: 53%;
+}
+.offset-by-six-twelths.column:first-child {
+  margin-left: 51%;
+}
+.offset-by-seven-twelths {
+  margin-left: 61.5%;
+}
+.offset-by-seven-twelths.column:first-child {
+  margin-left: 59.5%;
+}
+.offset-by-eight-twelths {
+  margin-left: 70%;
+}
+.offset-by-eight-twelths.column:first-child {
+  margin-left: 68%;
+}
+.offset-by-nine-twelths {
+  margin-left: 78.5%;
+}
+.offset-by-nine-twelths.column:first-child {
+  margin-left: 76.5%;
+}
+.offset-by-ten-twelths {
+  margin-left: 87%;
+}
+.offset-by-ten-twelths.column:first-child {
+  margin-left: 85%;
+}
+.offset-by-eleven-twelths,
+.offset-by-eleven-twelths.column:first-child {
+  margin-left: 93.5%;
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  } /* FIXED WIDTH */
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* FLUID w/ columns (using default settings above) */
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  /* FLUID w/o columns (stacked) */
+  .row {
+    margin: 0;
+  }
+  .column,
+  .column:first-child,
+  .centered.column,
+  .centered.column:first-child,
+  .offset-by-one-half,
+  .offset-by-one-half.column:first-child,
+  .offset-by-one-third,
+  .offset-by-one-third.column:first-child,
+  .offset-by-two-thirds,
+  .offset-by-two-thirds.column:first-child,
+  .offset-by-one-fourth,
+  .offset-by-one-fourth.column:first-child,
+  .offset-by-three-fourths,
+  .offset-by-three-fourths.column:first-child,
+  .offset-by-one-fifth,
+  .offset-by-one-fifth.column:first-child,
+  .offset-by-one-twelth,
+  .offset-by-one-twelth.column:first-child,
+  .offset-by-two-twelths,
+  .offset-by-two-twelths.column:first-child,
+  .offset-by-three-twelths,
+  .offset-by-three-twelths.column:first-child,
+  .offset-by-four-twelths,
+  .offset-by-four-twelths.column:first-child,
+  .offset-by-five-twelths,
+  .offset-by-five-twelths.column:first-child,
+  .offset-by-six-twelths,
+  .offset-by-six-twelths.column:first-child,
+  .offset-by-seven-twelths,
+  .offset-by-seven-twelths.column:first-child,
+  .offset-by-eight-twelths,
+  .offset-by-eight-twelths.column:first-child,
+  .offset-by-nine-twelths,
+  .offset-by-nine-twelths.column:first-child,
+  .offset-by-ten-twelths,
+  .offset-by-ten-twelths.column:first-child,
+  .offset-by-eleven-twelths,
+  .offset-by-eleven-twelths.column:first-child {
+    margin: 0.25em 0;
+  }
+
+  /*single stack all */
+  .one.column,
+  .one-half.column,
+  .one-third.column,
+  .two-thirds.column,
+  .one-fourth.column,
+  .three-fourths.column,
+  .one-fifth.column,
+  .two-fifths.column,
+  .three-fifths.column,
+  .four-fifths.column,
+  .one-sixth.column,
+  .one-seventh.column,
+  .one-eighth.column,
+  .one-twelth.column,
+  .one-twelths.column,
+  .two-twelths.column,
+  .three-twelths.column,
+  .four-twelths.column,
+  .five-twelths.column,
+  .six-twelths.column,
+  .seven-twelths.column,
+  .eight-twelths.column,
+  .nine-twelths.column,
+  .ten-twelths.column,
+  .eleven-twelths.column,
+  .twelve-twelths.column {
+    width: 100%;
+  }
+
+  /*split even */
+  .one-half.column.split {
+    width: 49%;
+    margin: 0.25em 0 0.25em 2%;
+  }
+  .one-half.column.split:first-child {
+    margin: 0.25em 0;
+  }
+  .one-fourth.column.split {
+    width: 49%;
+    margin: 0.25em 0 0.25em 2%;
+  }
+  .one-fourth.column.split:first-child,
+  .one-fourth.column.split:nth-child(3) {
+    margin: 0.25em 0;
+  }
+  .one-eighth.column.split {
+    width: 49%;
+    margin: 0.25em 0 0.25em 2%;
+  }
+  .one-eighth.column.split:first-child,
+  .one-eighth.column.split:nth-child(2n + 1) {
+    margin: 0.25em 0;
+  }
+}
+
+/* #CLEARFIX
+================================================== */
+/*From Chris Coyier CSS Tricks
+https://css-tricks.com/snippets/css/clear-fix/ */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* DEMO STYLING */
+
+/* #RESET
+================================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* #HTML5
+================================================== */
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure {
+  display: block;
+}
+
+/* #CLEARFIX
+================================================== */
+/*From Chris Coyier CSS Tricks
+https://css-tricks.com/snippets/css/clear-fix/ */
+.group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* #BASE TYPOGRAPHY
+================================================== */
+
+/*
+=================================================
+	Basic text sizing
+=================================================
+	Set your main font size for paragraph
+
+	Reference
+	62.5%  => 10px
+	68.8%  => 11px
+	75%    => 12px
+	81.3%  => 13px
+	87.5%  => 14px
+	100%   => 16px
+	112.5% => 18px
+	125%   => 20px
+
+*/
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%; /* 16px */
+  line-height: 1.5em;
+}
+
+/*
+Using a Traditional scale: 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72
+	if base is 16:
+	h1 = 48 pixels → 48 ÷ 16 = 3 em
+	h2 = 36 pixels → 36 ÷ 16 = 2.25 em
+	h3 = 24 pixels → 24 ÷ 16 = 1.5 em
+	h4 = 21 pixels → 21 ÷ 16 = 1.3125 em
+	h5 = 18 pixels → 18 ÷ 16 = 1.125 em
+	h6 = 16 pixels → 16 ÷ 16 = 1 em
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+h1 {
+  font-size: 3em;
+  line-height: 1.15em;
+}
+h2 {
+  font-size: 2.25em;
+  line-height: 1.2em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
+h4 {
+  font-size: 1.3125em;
+  line-height: 1.3em;
+}
+h5 {
+  font-size: 1.125em;
+  line-height: 1.35em;
+}
+h6 {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+/* #Paragraphs 
+================================================== */
+p {
+  margin-bottom: 1.25em;
+}
+
+/* #Links
+================================================== */
+a {
+  color: #39c;
+  text-decoration: none;
+}
+a:hover {
+  color: #39c;
+}
+
+/* #Lists
+================================================== */
+ul,
+ol {
+  margin: 0 0 1.25em 0;
+}
+
+ul li ul,
+ul li ol,
+ol li ul,
+ol li ol {
+  margin: 0;
+}
+
+li {
+  margin: 0 0 0 1.875em;
+}
+
+/* #Images
+================================================== */
+a img {
+  border: none;
+}
+
+/* LAYOUT/GRID
+===================================== */
+
+/* See the grid CSS file */
+
+.grid .column {
+  background: #ccc;
+}
+
+.grid section p {
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
+}
+
+/* SITE SPECIFIC CSS
+===================================== */
+
+header {
+  margin: 1em 0;
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin-bottom: 0.25em;
+}
+
+header p.tagline {
+  color: #999;
+  font-size: 0.6em;
+  line-height: 0.6em;
+  text-transform: uppercase;
+}
+
+.content section {
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
+  border-top: 1px solid #ddd;
+}
+
+.byline {
+  color: #999;
+  font-size: 0.6em;
+  line-height: 0.6em;
+  margin-top: -2em;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+
+footer {
+  margin: 1em 0;
+  padding: 1em 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* #Download Button
+================================================== */
+
+.downloadbutton {
+  margin: 0 auto;
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #ededed),
+    color-stop(1, #dfdfdf)
+  );
+  background: -moz-linear-gradient(center top, #ededed 5%, #dfdfdf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background-color: #ededed;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #777777;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #ffffff;
+}
+.downloadbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #dfdfdf),
+    color-stop(1, #ededed)
+  );
+  background: -moz-linear-gradient(center top, #dfdfdf 5%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background-color: #dfdfdf;
+  color: #000;
+}
+.downloadbutton:active {
+  position: relative;
+  top: 1px;
+}

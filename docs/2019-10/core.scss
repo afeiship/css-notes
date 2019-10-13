@@ -1,0 +1,14 @@
+// https://codepen.io/kccnma/pen/FdeBl
+
+$gutter: 2;
+$grid: 4;
+$item: (100 - $gutter * ($grid - 1))/$grid;
+
+@for $i from 1 through $grid {
+  $width: ($i - 1)*$gutter + $item * $i;
+  .col-#{$i}-#{$grid} {
+    width: percentage($width/100);
+  }
+}
+
+
