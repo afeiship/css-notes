@@ -15,9 +15,9 @@
         width: 80%;
         margin: 20px auto;
       }
-      button{
-          width:100%;
-          padding:10px;
+      button {
+        width: 100%;
+        padding: 10px;
       }
       p {
         background: #fe0;
@@ -31,7 +31,7 @@
         /* border:1px solid; */
         /* border:1px solid transparent; */
         /* 这个并不行，因为并不影响 bfc */
-        outline: 1px solid #f00;
+        /* outline: 1px solid #f00; */
         background: #eee;
         margin: 10px 0;
       }
@@ -40,7 +40,8 @@
   <body>
     <!-- 相邻元素之间 -->
     <!-- 上下会以 margin 大的那个为中间的距离 -->
-    <button id="btn-bfc">Trigger BFC</button>
+    <button id="btn-bfc">Parent - last child</button>
+    <button id="btn-bfc2">Silbing</button>
     <div class="container">
       <p>
         少年时，想碰到一个聂小倩，拼了性命爱一场，天亮前带着她的魂魄远走他乡。
@@ -59,9 +60,17 @@
     </div>
     <script>
       var el = document.getElementById('btn-bfc');
+      var el2 = document.getElementById('btn-bfc2');
+      var divs = [].slice.call(document.querySelectorAll('.container div'));
       // 加给最外层 div，解决最外层与最后一个元素之间的问题。
       el.onclick = function() {
         document.querySelector('div').style.cssText = 'border:1px solid #00f;';
+      };
+
+      el2.onclick = function() {
+        divs.forEach((item) => {
+          item.style.cssText = 'border:1px solid #f00;';
+        });
       };
     </script>
   </body>
