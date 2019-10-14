@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background: #eee;
+        width: 80%;
+        margin: 20px auto;
+      }
+      p {
+        background: #fe0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      div {
+        /* padding: 1px; */
+        /* overflow: auto; */
+        /* overflow: hidden; */
+        /* border:1px solid; */
+        /* border:1px solid transparent; */
+        /* 这个并不行，因为并不影响 bfc */
+        outline: 1px solid #f00;
+        background: #eee;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 相邻元素之间 -->
+    <!-- 上下会以 margin 大的那个为中间的距离 -->
+    <button id="btn-bfc">Trigger BFC</button>
+    <div class="container">
+      <p>
+        少年时，想碰到一个聂小倩，拼了性命爱一场，天亮前带着她的魂魄远走他乡。
+      </p>
+      <p>
+        青年时，想碰到一个白素贞，家大业大，要啥有啥，吃完软饭一抹嘴，还有人负责把她关进雷峰塔。
+      </p>
+      <div>
+        <p>嘴角轻轻上扬，算是对着光阴的镜子，和自己撒个娇。</p>
+      </div>
+      <div>
+        <p>
+          中年时，想要一个田螺姑娘，温婉可人，红袖添香，半夜写累了，让她变回原形，加干辣椒、花椒、姜、蒜片爆炒，淋入香油，起锅装盘。
+        </p>
+      </div>
+    </div>
+    <script>
+      var el = document.getElementById('btn-bfc');
+      el.onclick = function() {
+        document.querySelector('div').style.cssText = 'border:1px solid #00f;';
+      };
+    </script>
+  </body>
+</html>
