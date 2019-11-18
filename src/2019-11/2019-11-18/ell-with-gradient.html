@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      p {
+        height: 3.6em;
+        font-size: 16px;
+        color: #999;
+        line-height: 1.8;
+        overflow: hidden;
+        position: relative;
+      }
+      p:after {
+        content: '';
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 10%;
+        height: 1.8em;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        上面的代码给p元素上面添加了一个伪类。并且让这个伪类采用绝对定位，定位至文本结尾处。
+        超过的部分可以使用overflow:hidden隐藏。并且结果部分用一个渐变效果遮盖。
+      </p>
+    </div>
+  </body>
+</html>
