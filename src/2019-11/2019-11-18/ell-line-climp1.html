@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .ell1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        /* white-space: nowrap; */
+      }
+
+      .ell2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+      }
+      .blank{
+          height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ell1">
+      PLN 3355223666.3509426
+    </div>
+
+    <div class="blank"></div>
+
+    <!-- 只有一行的时候，优先使用这一种方式 -->
+    <div class="ell2">
+      PLN 3355223666.3509426
+    </div>
+  </body>
+</html>
