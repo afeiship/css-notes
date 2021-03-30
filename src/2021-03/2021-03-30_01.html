@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- https://stackoverflow.com/questions/29682271/safari-kerning-issue-when-using-f-and-i -->
+    <!-- FI 粘连问题 -->
+    <style>
+        .word-underline {
+            /* display: inline-block; */
+            font-variant-ligatures: none;
+            color: #f00;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="option-group">
+        <section class="c-option-text">
+            <div class="c-option-text__option_normal"><label class="c-option-text__label_normal">A</label>
+                <div class="c-option-text__answer_normal"><span class="c-option-text__words"><span
+                            class="word-underline">i</span>nsect</span></div>
+            </div>
+        </section>
+        <section class="c-option-text">
+            <div class="c-option-text__option_normal"><label class="c-option-text__label_normal">B</label>
+                <div class="c-option-text__answer_normal"><span class="c-option-text__words">f<span
+                            class="word-underline">i</span>fty</span></div>
+            </div>
+        </section>
+        <section class="c-option-text">
+            <div class="c-option-text__option_normal"><label class="c-option-text__label_normal">C</label>
+                <div class="c-option-text__answer_normal"><span class="c-option-text__words">Fr<span
+                            class="word-underline">i</span>day</span></div>
+            </div>
+        </section>
+        <section class="c-option-text">
+            <div class="c-option-text__option_normal"><label class="c-option-text__label_normal">D</label>
+                <div class="c-option-text__answer_normal"><span class="c-option-text__words">w<span
+                            class="word-underline">i</span>n</span></div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
